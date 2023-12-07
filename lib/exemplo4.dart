@@ -33,6 +33,9 @@ class _HomeBottonNavState extends State<HomeBottonNav> {
     Text(
       'Usuários',
     ),
+    Text(
+      'Brasil'
+    )
   ];
 
   void _onItemTapped(int index) {
@@ -53,16 +56,24 @@ class _HomeBottonNavState extends State<HomeBottonNav> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
+            backgroundColor: Color.fromARGB(199, 68, 164, 164),
             icon: Icon(Icons.home),
             label: 'Home',
           ),
           BottomNavigationBarItem(
+            backgroundColor: Color.fromARGB(199, 68, 164, 164),
             icon: Icon(Icons.shopping_cart),
             label: 'Carrinho',
           ),
           BottomNavigationBarItem(
+            backgroundColor: Color.fromARGB(199, 68, 164, 164),
             icon: Icon(Icons.person),
             label: 'Usuários',
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: Color.fromARGB(199, 68, 164, 164),
+            icon: Icon(Icons.person),
+            label: 'Brasil',
           ),
         ],
         currentIndex: _selectedIndex,
